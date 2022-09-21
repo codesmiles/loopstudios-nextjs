@@ -1,11 +1,10 @@
 import Head from "next/head";
-import "globals";
 import Navbar from "../components/navBar";
 import Header from "../components/headerText";
 import InteractiveVR from "../components/interactiveVR";
 import OurCreationTitle from "../components/ourCreations";
 import OurCreationContent from "../components/OurCreationContent";
-import Footer from "../components/footer";
+
 
 export default function Home() {
   return (
@@ -43,7 +42,7 @@ export default function Home() {
           ]}
         />
       </main>
-      <Footer/>
+      
     </div>
   );
 }
