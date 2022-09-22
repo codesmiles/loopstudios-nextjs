@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap");
 
 @layer utilities {
-  * {
+  /* * {
     box-sizing: border-box;
   }
   html,
@@ -15,7 +15,7 @@
   a {
     color: inherit;
     text-decoration: none;
-  }
+  } */
  
   .font-alata {
     font-family: "Alata", sans-serif;

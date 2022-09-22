@@ -22,7 +22,7 @@ export default function Home() {
         <title>Frontend Mentor | Loopstudios landing page</title>
       </Head>
 
-      <main>
+      <main className="text-[15px]">
         <header>
           <Navbar />
           <Header />

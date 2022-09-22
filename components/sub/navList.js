@@ -2,9 +2,11 @@ const NavList = ({
   content = ["About", "Career", "Events", "Products", "Support"],
 }) => {
   return (
-    <ul>
+    <ul className="md:flex md:justify-start">
       {content.map((val) => (
-        <li>{val}</li>
+        <li className="py-2 md:mr-4">
+          <a href="#">{val}</a>
+        </li>
       ))}
     </ul>
   );
