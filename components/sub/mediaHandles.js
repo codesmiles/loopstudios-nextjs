@@ -8,8 +8,9 @@ const MediaHandles = ({
 }) => {
   return (
     <ul className="flex justify-center my-6 md:justify-end">
-      {links.map((val) => (
-        <li className="mx-2">
+      {links.map((val, i) => (
+        <li className="mx-2" key={i}>
+        
           <a href="#">
             <img src={val} alt="" />
           </a>

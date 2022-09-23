@@ -4,19 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap");
 
 @layer utilities {
-  /* * {
-    box-sizing: border-box;
-  }
-  html,
-  body {
-    padding: 0;
-    margin: 0;
-  }
-  a {
-    color: inherit;
-    text-decoration: none;
+  /* .bgFisheye {
+    background-image: url("../public/images/desktop/image-fisheye.jpg");
   } */
- 
+  
   .font-alata {
     font-family: "Alata", sans-serif;
   }
@@ -31,4 +22,3 @@
     color: hsl(228, 45%, 44%);
   }
 }
-

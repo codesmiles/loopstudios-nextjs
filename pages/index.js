@@ -5,7 +5,6 @@ import InteractiveVR from "../components/interactiveVR";
 import OurCreationTitle from "../components/ourCreations";
 import OurCreationContent from "../components/OurCreationContent";
 
-
 export default function Home() {
   return (
     <div>
@@ -30,19 +29,18 @@ export default function Home() {
         <InteractiveVR />
         <OurCreationTitle />
         <OurCreationContent
-          content={[
-            `Deep earth`,
-            `Night arcade`,
-            `Soccer team VR`,
-            `The grid`,
-            `From up above VR`,
-            `Pocket borealis`,
-            `The curiosity`,
-            `Make it fisheye`,
+          contents={[
+            [`Deep earth`,"../public/images/desktop/image-deep-earth.jpg"],
+            [`Night arcade`],
+            [`Soccer team VR`],
+            [`The grid`],
+            [`From up above VR`,],
+            [`Pocket borealis`],
+            [`The curiosity`],
+            [`Make it fisheye`],
           ]}
         />
       </main>
-      
     </div>
   );
 }
