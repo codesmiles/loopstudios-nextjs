@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
 
       <main className="text-[15px]">
-        <header>
+        <header className="bg-[url('/images/image-hero.jpg')]">
           <Navbar />
           <Header />
         </header>

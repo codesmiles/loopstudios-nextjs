@@ -1,13 +1,23 @@
 import Link from "next/link";
-const SeeAll = () => {
+const SeeAll = ({
+  cssData = { font: "1rem", padding: { y: "0.25rem", x: "2.5rem" } },
+}) => {
   return (
-    <div className="">
-      <Link href="/">
-      <a className="border border-solid border-black rounded px-10 py-1 uppercase">
-        See all
+    <Link href="/">
+      <a
+        className="font-alata uppercase tracking-widest"
+        style={{
+          fontSize: `${cssData.font}`,
+        }}
+      >
+        <div
+          className="border-2 border-solid border-gray-500 rounded"
+          style={{ padding: `${cssData.padding["y"]} ${cssData.padding["x"]}` }}
+        >
+          See all
+        </div>
       </a>
-      </Link>
-    </div>
+    </Link>
   );
 };
 
