@@ -1,7 +1,7 @@
 const InteractiveVR = () => {
   return (
-    <div className="md:relative w-4/5 my-0 mx-auto">
-      <div className=" mt-10 lg:mb-48 mx-auto lg:w-full">
+    <div className="md:relative w-4/5 mt-20 mx-auto">
+      <div className=" lg:mb-48 mx-auto lg:w-full">
         <img
           src="../images/mobile/image-interactive.jpg"
           className="lg:hidden"
