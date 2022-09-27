@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SeeAll from "./sub/seeAll";
+import Link from "next/link";
 // could have use state with use effect hook
 // to get this sorted but i will just have to
 // manually style the grid which is almost the same as duplicated
@@ -7,29 +8,31 @@ import SeeAll from "./sub/seeAll";
 const OurCreationContent = ({ contents }) => {
   return (
     <div className="pb-16">
-      <ul className="w-full my-10 mx-auto grid gap-4 justify-center md:w-4/5 md:grid-cols-4">
+      <ul className="w-4/5 my-10 mx-auto grid gap-4 justify-center md:w-4/5 md:grid-cols-4 font-josefin">
         {contents.map((val, i) => (
           <li key={i}>
-            <div
-              className="hidden md:block bg-no-repeat bg-cover h-full w-full pt-80 pb-10 pl-5"
-              style={{ backgroundImage: `url(${val[1]})` }}
-            >
-              <p className="text-white uppercase text-2xl font-thin ">
-                {val[0]}
-              </p>
-            </div>
+            <Link href="#">
+              <a>
+                <div
+                  className="hidden md:block bg-no-repeat bg-cover h-full w-full pt-80 pb-10 pl-5 text-white"
+                  style={{ backgroundImage: `url(${val[1]})` }}
+                >
+                  <p className="text-white uppercase md:text-2xl lg:text-3xl font-josefin ">
+                    {val[0]}
+                  </p>
+                </div>
+              </a>
+            </Link>
 
             <div className="relative w-full md:hidden">
-              <Image
-                src={val[2]}
-                className=""
-                width="350"
-                height="150"
-                alt=""
-              />
-              <p className="absolute text-white top-20 left-5 text-2xl uppercase font-light">
-                {val[0]}
-              </p>
+              <Link href="#">
+                <a>
+                  <img src={val[2]} className="" alt="" />
+                  <p className="absolute text-white top-16 left-5 text-2xl uppercase font-light">
+                    {val[0]}
+                  </p>
+                </a>
+              </Link>
             </div>
           </li>
         ))}

@@ -1,6 +1,7 @@
 import FootSection1 from "./sub/footSection1";
-import Image from "next/image";
+// import Image from "next/image";
 import NavList from "./sub/navList";
+import Logo from "./sub/logo";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="text-center w-4/5 my-0 mx-auto md:flex md:justify-between">
         <div>
           <div className=" my-5 md:my-4 flex justify-center md:justify-start ">
-            <Image src="/images/logo.svg" className=""  width="192" height="32" alt="" />
+            <Logo/>
           </div>
           <NavList />
         </div>

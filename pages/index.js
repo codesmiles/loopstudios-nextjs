@@ -4,12 +4,6 @@ import Header from "../components/headerText";
 import InteractiveVR from "../components/interactiveVR";
 import OurCreationTitle from "../components/ourCreations";
 import OurCreationContent from "../components/OurCreationContent";
-import { useState } from "react";
-
-const imgUrl = [
-  "/images/desktop/image-hero.jpg",
-  "/images/mobile/image-hero.jpg",
-];
 
 export default function Home() {
   return (
