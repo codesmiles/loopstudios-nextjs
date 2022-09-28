@@ -1,13 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-const Logo = () => {
+const Logo = ({index=-2}) => {
     return ( 
         <Link href="/">
-        <a className="">
-          <div>
+          <div className="">
+        <a >
             <Image src={"/images/logo.svg"} width="192" height="32" />
-          </div>
         </a>
+          </div>
       </Link>
      );
 }

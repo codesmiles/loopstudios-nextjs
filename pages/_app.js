@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
     <>
     <Component {...pageProps} />
     <div className='w-full '>
-    <Footer/>
+    <Footer />
     <FootSection2 />
     </div>
   
