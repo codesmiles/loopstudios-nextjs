@@ -19,8 +19,7 @@ const InteractiveVR = () => {
           in interactive VR
         </h1>
         <p
-          className="leading-loose px-2 font-alata font-bold mt-5 pb-10 lg:text-left"
-          style={{ color: "hsl(0, 0%, 55%)" }}
+          className="leading-loose px-2 font-alata font-bold mt-5 pb-10 lg:text-left text-[#8c8c8c]"
         >
           Founded in 2011, Loopstudios has been producing world-class virtual
           reality projects for some of the best companies around the globe. Our

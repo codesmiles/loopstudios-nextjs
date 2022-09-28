@@ -11,7 +11,7 @@ const SeeAll = ({
         }}
       >
         <div
-          className="border-2 border-solid border-gray-500 rounded hover:bg-black hover:text-white transition duration-500 ease-in-out"
+          className={`border-2 border-solid border-gray-500 rounded hover:bg-black hover:text-white transition duration-500 ease-in-out`}
           style={{ padding: `${cssData.padding["y"]} ${cssData.padding["x"]}` }}
         >
           See all
