@@ -3,7 +3,7 @@ import Navbar from "../components/navBar";
 import Header from "../components/headerText";
 import InteractiveVR from "../components/interactiveVR";
 import OurCreationTitle from "../components/ourCreations";
-import OurCreationContent from "../components/ourCreationContent";
+import OurCreationContent from "../components/OurCreationContent";
 import SeeAll from "../components/sub/linkTag";
 import ToTheTop from "../components/scroll/toTheTop";
 

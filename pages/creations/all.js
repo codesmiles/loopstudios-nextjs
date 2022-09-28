@@ -1,4 +1,4 @@
-import OurCreationContent from "../../components/ourCreationContent";
+import OurCreationContent from "../../components/OurCreationContent";
 import ToTheTop from "../../components/scroll/toTheTop";
 import LinkTag from "../../components/sub/linkTag";
 
