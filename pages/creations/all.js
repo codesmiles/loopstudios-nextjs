@@ -1,15 +1,16 @@
 import OurCreationContent from "../../components/ourCreationContent";
+import ToTheTop from "../../components/scroll/toTheTop";
 import LinkTag from "../../components/sub/linkTag";
 
 const AllContent = () => {
-    return ( 
-
-        <div className="w-4/5 mx-auto">
-            <div className="my-10 flex justify-end">
-                <LinkTag text="go back" url="/"/>
-            </div>
-            <OurCreationContent
-                contents={[
+  return (
+    <>
+      <div className="w-4/5 mx-auto">
+        <div className="my-10 flex justify-center md:justify-end">
+          <LinkTag text="go back" url="/" />
+        </div>
+        <OurCreationContent
+          contents={[
             [
               `Deep earth`,
               `/images/desktop/image-deep-earth.jpg`,
@@ -51,10 +52,11 @@ const AllContent = () => {
               `/images/mobile/image-fisheye.jpg`,
             ],
           ]}
-            />
+        />
+      </div>
+      <ToTheTop />
+    </>
+  );
+};
 
-        </div>
-    );
-}
- 
 export default AllContent;

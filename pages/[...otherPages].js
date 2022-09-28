@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Logo from "../components/sub/logo";
+import Navbar from "../components/navBar";
 
 const OtherPages = () => {
   const router = useRouter();
@@ -18,9 +19,9 @@ const OtherPages = () => {
               content={`This is the ${otherPages[0]} page`}
             />
           </Head>
-          <main className={`w-4/5 mx-auto my-24`}>
-            <div className={`bg-black py-3 pl-4`}>
-            <Logo/>
+          <main className={`w-4/5 mx-auto mt-10`}>
+            <div className={`bg-gradient-to-r from-blue-600 via-red-500 to-blue-500 pl-4`}>
+            <Navbar/>
             </div>
             <h1
               className={`text-4xl text-center font-bold uppercase font-alata my-10`}
@@ -28,7 +29,7 @@ const OtherPages = () => {
               {" "}
               {otherPages[0]} page
             </h1>
-            <p>
+            <p className={`py-10`}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
               fugiat suscipit blanditiis assumenda nostrum aut. Laudantium,
               repudiandae magnam porro recusandae labore nobis atque ullam

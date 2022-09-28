@@ -5,6 +5,7 @@ import InteractiveVR from "../components/interactiveVR";
 import OurCreationTitle from "../components/ourCreations";
 import OurCreationContent from "../components/ourCreationContent";
 import SeeAll from "../components/sub/linkTag";
+import ToTheTop from "../components/scroll/toTheTop";
 
 export default function Home() {
   return (
@@ -21,8 +22,8 @@ export default function Home() {
         />
         <title>Frontend Mentor | Loopstudios landing page</title>
       </Head>
-      <main className="text-[15px]">
-        <header className="bg-no-repeat bg-cover bg-[url('/images/mobile/image-hero.jpg')] md:bg-[url('/images/desktop/image-hero.jpg')]">
+      <main className="text-[15px] relative">
+        <header className="bg-no-repeat bg-cover bg-[url('/images/mobile/image-hero.jpg')] md:bg-[url('/images/desktop/image-hero.jpg')] ">
           <div>
             <Navbar />
           </div>
@@ -84,6 +85,7 @@ export default function Home() {
             />
           </div>
         </div>
+        <ToTheTop/>
       </main>
     </div>
   );
