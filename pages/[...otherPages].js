@@ -19,10 +19,10 @@ const OtherPages = () => {
               content={`This is the ${otherPages[0]} page`}
             />
           </Head>
-          <main className={`w-4/5 mx-auto mt-10`}>
             <div className={`bg-gradient-to-r from-blue-600 via-red-500 to-blue-500 pl-4`}>
             <Navbar/>
             </div>
+          <main className={`w-4/5 mx-auto mt-10`}>
             <h1
               className={`text-4xl text-center font-bold uppercase font-alata my-10`}
             >

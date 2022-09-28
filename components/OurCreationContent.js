@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 // could have use state with use effect hook
 // to get this sorted but i will just have to
 // manually style the grid which is almost the same as duplicated
@@ -26,7 +27,7 @@ const OurCreationContent = ({ contents }) => {
             <div className="relative w-full md:hidden -z-10">
               <Link href="#">
                 <a>
-                  <img src={val[2]} className="" alt="" />
+                  <Image src={val[2]} width="500" height="200" alt={val[0]} />
                   <p className="absolute text-white top-16 left-5 text-2xl uppercase font-light ">
                     {val[0]}
                   </p>
