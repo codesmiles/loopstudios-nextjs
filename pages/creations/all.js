@@ -1,12 +1,12 @@
 import OurCreationContent from "../../components/ourCreationContent";
-import SeeAll from "../../components/sub/seeAll";
+import LinkTag from "../../components/sub/linkTag";
 
 const AllContent = () => {
     return ( 
 
         <div className="w-4/5 mx-auto">
             <div className="my-10 flex justify-end">
-                <SeeAll text="go back" url="/"/>
+                <LinkTag text="go back" url="/"/>
             </div>
             <OurCreationContent
                 contents={[

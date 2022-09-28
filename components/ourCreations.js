@@ -1,4 +1,4 @@
-import SeeAll from "./sub/seeAll";
+import SeeAll from "./sub/linkTag";
 
 const OurCreationTitle = () => {
   return (

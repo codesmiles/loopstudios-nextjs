@@ -4,7 +4,7 @@ import Header from "../components/headerText";
 import InteractiveVR from "../components/interactiveVR";
 import OurCreationTitle from "../components/ourCreations";
 import OurCreationContent from "../components/ourCreationContent";
-import SeeAll from "../components/sub/seeAll";
+import SeeAll from "../components/sub/linkTag";
 
 export default function Home() {
   return (
