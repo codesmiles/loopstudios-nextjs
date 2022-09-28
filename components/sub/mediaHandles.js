@@ -1,9 +1,10 @@
+import Image from "next/image";
 const MediaHandles = ({
   links = [
-    "/images/icon-facebook.svg",
-    `/images/icon-twitter.svg`,
-    `/images/icon-pinterest.svg`,
-    `/images/icon-instagram.svg`,
+    [`/images/icon-facebook.svg`,"24", "24",],
+    [`/images/icon-twitter.svg`,"24", "20",],
+    [`/images/icon-pinterest.svg`,"24", "24",],
+    [`/images/icon-instagram.svg`,"24", "24",],
   ],
 }) => {
   return (
@@ -12,7 +13,7 @@ const MediaHandles = ({
         <li className="mx-2" key={i}>
         
           <a href="#">
-            <img src={val} alt="" />
+            <Image src={val[0]} width={`24`} height={`24`} alt="" />
           </a>
         </li>
       ))}
