@@ -5,8 +5,11 @@ function MyApp({ Component, pageProps }) {
   return(
     <>
     <Component {...pageProps} />
+    <div className='w-full sticky'>
     <Footer/>
     <FootSection2 />
+    </div>
+  
     </> 
     )
 }
