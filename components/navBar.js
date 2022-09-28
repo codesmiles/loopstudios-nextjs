@@ -25,21 +25,25 @@ const Navbar = () => {
       </div>
       <div>
         <div>
+          {/* mobile */}
           {isNavOpen ? (
             <div
-              className={` absolute pl-14 left-0 top-0 pt-40 bg-black w-full h-full md:bg-transparent md:static md:pl-0 md:pt-2 md:hidden`}
+              className={` fixed pl-14 left-0 top-0 pt-40 bg-black w-full h-full md:bg-transparent md:static md:pl-0 md:pt-2 md:hidden`}
             >
               <NavList />
             </div>
           ) : null}
+          {/* ---------------------- */}
 
+          {/* desktop */}
           <div className="hidden md:block pt-2">
             <NavList />
           </div>
+          {/* --------------- */}
         </div>
 
         <span
-          className="cursor-pointer md:hidden block"
+          className="cursor-pointer md:hidden block z-10"
           onClick={() => {
             isNavOpen ? setIsNavOpen(false) : setIsNavOpen(true);
           }}

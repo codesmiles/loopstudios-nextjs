@@ -24,7 +24,7 @@ const ToTheTop = () => {
   }, []);
 
   return (
-    <div className={"fixed bottom-10 right-10"}>
+    <div className={"fixed bottom-10 right-2 md:right-10"}>
       <button
         type="button"
         onClick={scrollToTop}

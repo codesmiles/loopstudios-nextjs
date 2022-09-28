@@ -22,11 +22,12 @@ const OurCreationContent = ({ contents }) => {
               </a>
             </Link>
 
-            <div className="relative w-full md:hidden">
+          {/* MOBILE */}
+            <div className="relative w-full md:hidden -z-10">
               <Link href="#">
                 <a>
                   <img src={val[2]} className="" alt="" />
-                  <p className="absolute text-white top-16 left-5 text-2xl uppercase font-light">
+                  <p className="absolute text-white top-16 left-5 text-2xl uppercase font-light ">
                     {val[0]}
                   </p>
                 </a>
