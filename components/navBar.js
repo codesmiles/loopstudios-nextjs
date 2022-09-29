@@ -15,6 +15,8 @@ const Navbar = () => {
     : setIsNavOpen(true);
   }
   useEffect(()=>{
+    // events.on("routeChangeStart",close);
+
     return ()=>{
       events.off("routeChangeStart",close)
     }
