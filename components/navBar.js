@@ -2,20 +2,19 @@ import NavList from "./sub/navList";
 import Hamburger from "./sub/hamburger";
 import Close from "./sub/close";
 import Logo from "./sub/logo";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import {useRouter} from "next/router"
-import { useEffect } from "react";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const {events} = useRouter();
 
   const close = () =>{
-    isNavOpen ? setIsNavOpen(false) : setIsNavOpen(true);
+    isNavOpen 
+    ? setIsNavOpen(false) 
+    : setIsNavOpen(true);
   }
   useEffect(()=>{
-    events.on("routeChangeStart",close);
-
     return ()=>{
       events.off("routeChangeStart",close)
     }
@@ -46,12 +45,12 @@ const Navbar = () => {
           {/* --------------- */}
         </div>
 
-        <span
+        <div
           className="cursor-pointer md:hidden block "
           onClick={close}
         >
           {isNavOpen ? <Close /> : <Hamburger />}
-        </span>
+        </div>
       </div>
     </nav>
   );
