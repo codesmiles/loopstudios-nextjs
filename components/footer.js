@@ -1,5 +1,4 @@
 import FootSection1 from "./sub/footSection1";
-// import Image from "next/image";
 import NavList from "./sub/navList";
 import Logo from "./sub/logo";
 

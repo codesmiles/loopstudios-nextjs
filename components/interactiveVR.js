@@ -1,24 +1,23 @@
-import Image from "next/image";
+import ImagesContainer from "./sub/images";
 const InteractiveVR = () => {
   return (
     <div className="md:relative w-4/5 mt-20 mx-auto">
       <div className=" lg:mb-48 mx-auto lg:w-full">
         <div className="hidden lg:block w-3/5">
-        <Image
-          src="/images/desktop/image-interactive.jpg"
-          width="650"
-          height="450"
-          alt="Interactive desktop"
-        />
+          <ImagesContainer
+            dir={"/images/desktop/image-interactive.jpg"}
+            x={"650"}
+            y={"450"}
+            alt={"Interactive desktop"}
+          />
         </div>
         <div className=" flex justify-center lg:hidden">
-        <Image
-          src="/images/mobile/image-interactive.jpg"
-          
-          width="900"
-          height="600"
-          alt="Interctive mobile"
-        />
+          <ImagesContainer
+            dir={"/images/mobile/image-interactive.jpg"}
+            x={"900"}
+            y={"600"}
+            alt={"Interctive mobile"}
+          />
         </div>
       </div>
       <div className="text-center pt-16 bg-white lg:px-20 lg:absolute lg:w-3/5 h-full lg:top-36 lg:right-0">

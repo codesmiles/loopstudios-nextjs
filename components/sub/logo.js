@@ -1,13 +1,19 @@
 import Link from "next/link";
-import Image from "next/image";
-const Logo = ({index=-2}) => {
+import ImagesContainer from "./images";
+const Logo = (dir) => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
     return ( 
-        <Link href="/">
-          <div className="">
-        <a >
-            <Image src={"/images/logo.svg"} width="192" height="32" alt="logo"/>
+        <Link href={"/"}>
+        <a className="cursor" onClick={scrollToTop}>
+        <ImagesContainer dir={"/images/logo.svg"} x={"192"} y={"32"} alt={"logo"}/>
         </a>
-          </div>
+          
       </Link>
      );
 }

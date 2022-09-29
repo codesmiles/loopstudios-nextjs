@@ -22,6 +22,7 @@ const Navbar = () => {
     }
   },[close,events])
 
+  
   return (
     <nav className="w-4/5 mx-auto flex justify-between py-7">
       <div className="z-20">

@@ -6,7 +6,7 @@ const SeeAll = ({
   return (
     <Link href={url}>
       <a
-        className={`font-alata uppercase tracking-widest]`}
+        className={`font-alata uppercase tracking-widest`}
         style={{
           fontSize: `${cssData.font}`,
         }}

@@ -11,6 +11,8 @@ const ToTheTop = () => {
       setIsVisible(false);
     }
   };
+  
+  // smooth scroll fuction
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

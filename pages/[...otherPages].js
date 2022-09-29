@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import Logo from "../components/sub/logo";
 import Navbar from "../components/navBar";
 
 const OtherPages = () => {

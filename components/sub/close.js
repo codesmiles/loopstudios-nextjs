@@ -1,10 +1,16 @@
-
-import Image from "next/image";
+import ImagesContainer from "./images";
 
 const Close = () => {
-    return ( <div >
-        <Image src="/images/icon-close.svg" width="20" height="20" alt="close"/>
-    </div> );
-}
- 
+  return (
+    <div>
+      <ImagesContainer
+        dir={"/images/icon-close.svg"}
+        x={"20"}
+        y={"20"}
+        alt={"close"}
+      />
+    </div>
+  );
+};
+
 export default Close;
